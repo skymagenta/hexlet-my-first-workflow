@@ -1,12 +1,17 @@
-# file: .github/workflows/hello-world.yml
+# Name of workflow
 name: hello-world
-# on – определяет события, которые запускают воркфлоу
-on: push
+
+
+# Trigger the workflow on push or pull request
+on:
+  - push
+
 jobs:
   # build – произвольно выбранное имя задания
   # их может быть больше одного
   build:
     # операционная система для работы воркфлоу
+    # The type of machine to run the job on
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
       # run – произвольная bash-команда
