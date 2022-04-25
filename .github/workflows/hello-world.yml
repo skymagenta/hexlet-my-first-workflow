@@ -4,7 +4,7 @@ name: hello-world
 
 # Trigger the workflow on push or pull request
 on:
-  - push
+  - git push
 
 jobs:
   # build – произвольно выбранное имя задания
